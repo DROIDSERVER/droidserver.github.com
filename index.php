@@ -1,3 +1,3 @@
 <?php
-Echo "Welcome to Droid server\n";
+print "Welcome to Droid server\n";
 ?>
