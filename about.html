@@ -10,7 +10,7 @@
     <meta name='author' content='Jovano | Kojoo | Gfox | OWL '> 
     <meta name='description' content='BURUNG OWL Official website '>
     <link rel='shortcut icon' href='img/a.gif' type='image/x-icon'>
-    <title>BURUNGOWL | LINK GAME NONOLIVE</title>
+    <title>BURUNGOWL | ABOUT</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel='stylesheet' href='css/app.css'>
     <style>
@@ -22,6 +22,9 @@
             height: 50px;
             
         }
+        .txt-rata{
+            text-align: justify;
+        }
     </style>
 </head>
 <body>
@@ -31,39 +34,30 @@
 </div>
 <br/>
 <br/>
+
 <div class='wrap'>
-    <div class="gbku gb_kotak"></div>
-    <h3 >LINK GAME NONOLIVE</h3><br />
-    <div id="owl">
+    <h5>ABOUT</h5>
+    <h5 class="txt-rata">
+    Saya hanya seorang programer otodidak, suka ngotak atik sesuatu,
+    tidak bisa di bilang jago ,pro  dll , karna sering copas sana sini
+    jarang upload hasil kodingan entah apa tujuan nya,
+    sebenarnya saya seorang pendiam "KATA ORANG" , Tapi 
+    kalau di nonolive atau di medsos sering comment, chat ,julit dll
+    Terima Kasih sudah membaca tulisan ini, yang sebetulnya
+    kurang berpaedah.<br/>
+    Salam HD.<br/>
+    
+    </h5>
+    <h5>&copy <a href="https://instagram.com/manuk_az">BURUNG OWL</a></h5>
 
 
-    </div>
 </div>
 <pre><div class='foter round' > <b> &copy2022  | Created By <a href='https://instagram.com/manuk_az'>BURUNGOWL</a> | <a href='about.html'> ABOUT</a></b></div>
 </pre>
 </body>
-<script>
-    $(document).ready(function(){
-        $.getJSON("owl.json", function(data){
-            var get_data = '';
-            
-            $.each(data, function(key, value){
- 
-                get_data += '<div class="box-luar round">';
-                get_data += '<div class="box round cl_01"></div>';    
-                get_data += '<div class="textku cl_x1">'+value.nama+'</div>';
-                get_data += '<div class="mg"><a class="box kiri round cl_01 cl_x1" href="'+value.link+'">OPEN</a></div>';
-                get_data += '</div>';
-            });
-            $('#owl').append(get_data);
-            var box = document.getElementsByClassName('box'),
-            pl = box.length;
-            for (var i = 0; i < pl; i++) {
-                // Sisipkan kontainer angka-angka
-                box[i].innerHTML ;
-            }
-        });
-    });
-    
-</script> 
 </html>
+
+
+
+
+
